@@ -1,13 +1,4 @@
-apt_package './code_1.58.2-1626300392_arm64.deb ' do
+dpkg_package 'code_1.81.0-1690979901_arm64.deb' do
+  source '/home/dsusilo/Downloads/code_1.81.0-1690979901_arm64.deb'
   action :install
-end
-
-apt_package 'apt-transport-https' do
-end
-
-execute 'sudo update' do
-  command 'sudo apt update'
-end
-
-apt_package 'code' do
 end

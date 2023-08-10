@@ -7,4 +7,5 @@
 include_recipe 'test_cookbook::apt_update'
 include_recipe 'test_cookbook::gui_install'
 include_recipe 'test_cookbook::user_creation'
-# include_recipe 'test_cookbook::package_install'
+include_recipe 'test_cookbook::deb_download'
+include_recipe 'test_cookbook::package_install'
