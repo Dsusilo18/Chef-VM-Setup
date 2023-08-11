@@ -9,10 +9,6 @@ user 'daryl susilo' do
   gid 'sudo'
 end
 
-directory '/home/dsusilo/Deb' do
-  action :create
-end
-
 reboot 'reboot' do
   delay_mins 1
   action :request_reboot
