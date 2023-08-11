@@ -1,6 +1,14 @@
-# https://code.visualstudio.com/docs/?dv=linuxarm64_deb
-# /home/dsusilo/Dwnld
-remote_file '/home/dsusilo/Dwnld/code_1.81.0-1690979901_arm64.deb' do
+remote_file '/home/dsusilo/Downloads/code_1.81.0-1690979901_arm64.deb' do
   source 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64'
+  action :create
+end
+
+remote_file '/home/dsusilo/Pictures/Background/pexels-cats-coming-1543793.jpg' do
+  source 'https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?cs=srgb&dl=pexels-cats-coming-1543793.jpg&fm=jpg&_gl=1*vlo0iy*_ga*NTgyODAzMzAxLjE2OTE3NzM1NDU.*_ga_8JE65Q40S6*MTY5MTc3MzU0NS4xLjEuMTY5MTc3MzU4OS4wLjAuMA..'
+  action :create
+end
+
+remote_file '/home/dsusilo/Pictures/Background/pexels-photo-16013451.jpeg' do
+  source 'https://images.pexels.com/photos/16013451/pexels-photo-16013451.jpeg?cs=srgb&dl=pexels-brokenadmiral-16013451.jpg&fm=jpg&_gl=1*w3c6uc*_ga*NTgyODAzMzAxLjE2OTE3NzM1NDU.*_ga_8JE65Q40S6*MTY5MTc3MzU0NS4xLjEuMTY5MTc3NjE2Ny4wLjAuMA..'
   action :create
 end
