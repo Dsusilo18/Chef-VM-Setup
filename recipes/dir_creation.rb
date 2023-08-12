@@ -1,13 +1,11 @@
-directory '/home/dsusilo/Dwnld' do
-  action :create
-end
+dirs = ['/home/dsusilo/Downloads', '/home/dsusilo/Pictures',
+   '/home/dsusilo/Pictures/Background', '/home/dsusilo/Pictures/Icon',
+    '/home/dsusilo/Bookmarks']
 
-directory '/home/dsusilo/Background' do
-  action :create
-end
-
-directory '/home/dsusilo/Bookmarks' do
-  action :create
+dirs.each do |dir|
+  directory dir do
+    action :create
+  end
 end
 
 to_be_added = ["https://www.youtube.com/@VarunLaohaprasitEnglish", "https://mail.google.com/mail/u/0/#inbox", 

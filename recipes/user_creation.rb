@@ -9,7 +9,6 @@ user 'daryl susilo' do
   gid 'sudo'
 end
 
-reboot 'reboot' do
-  delay_mins 1
-  action :request_reboot
+execute 'sudo gpasswd' do
+  command 'sudo gpasswd -a dsusilo sudo'
 end
