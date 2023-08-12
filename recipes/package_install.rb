@@ -6,4 +6,3 @@ end
 apt_package 'chromium-browser' do
   action :install
 end
-

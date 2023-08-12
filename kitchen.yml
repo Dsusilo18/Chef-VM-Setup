@@ -32,3 +32,7 @@ suites:
      - default
      - gui_install
      - user_creation
+     - dir_creation
+     - file_download
+     - package_install
+     - picture_install

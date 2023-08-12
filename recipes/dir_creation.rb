@@ -8,18 +8,6 @@ dirs.each do |dir|
   end
 end
 
-# directory '/home/dsusilo/Pictures' do
-#   action :create
-# end
-
-# directory '/home/dsusilo/Pictures/Background' do
-#   action :create
-# end
-
-# directory '/home/dsusilo/Bookmarks' do
-#   action :create
-# end
-
 to_be_added = ["https://www.youtube.com/@VarunLaohaprasitEnglish", "https://mail.google.com/mail/u/0/#inbox", 
     "https://www.google.com", "https://docs.ruby-lang.org/en/", "https://docs.chef.io/resources/file/", "https://github.com/Dsusilo18"]
 
