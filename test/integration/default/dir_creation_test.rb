@@ -1,5 +1,5 @@
-dirs = %w(/home/dsusilo/Downloads /home/dsusilo/Pictures 
-/home/dsusilo/Pictures/Background /home/dsusilo/Pictures/Icon 
+dirs = %w(/home/dsusilo/Downloads /home/dsusilo/Pictures
+/home/dsusilo/Pictures/Background /home/dsusilo/Pictures/Icon
 /home/dsusilo/Bookmarks)
 
 control 'dir_creation' do

@@ -9,11 +9,10 @@ dirs.each do |dir|
   end
 end
 
-to_be_added = ["https://www.youtube.com/@VarunLaohaprasitEnglish", "https://mail.google.com/mail/u/0/#inbox", 
-    "https://www.google.com", "https://docs.ruby-lang.org/en/", "https://docs.chef.io/resources/file/", "https://github.com/Dsusilo18"]
+to_be_added = ['https://www.youtube.com/@VarunLaohaprasitEnglish', 'https://mail.google.com/mail/u/0/#inbox',
+    'https://www.google.com', 'https://docs.ruby-lang.org/en/', 'https://docs.chef.io/resources/file/', 'https://github.com/Dsusilo18']
 
 file '/home/dsusilo/Bookmarks/list.txt' do
-  content to_be_added.join(", ")
+  content to_be_added.join(', ')
   action :create
 end
-

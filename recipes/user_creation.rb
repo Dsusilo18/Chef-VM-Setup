@@ -8,7 +8,3 @@ user 'daryl susilo' do
   manage_home true
   gid 'sudo'
 end
-
-execute 'sudo gpasswd' do
-  command 'sudo gpasswd -a dsusilo sudo'
-end

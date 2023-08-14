@@ -12,6 +12,6 @@ end
 
 # sudo reboot
 reboot 'reboot' do
-  delay_mins 1
+  # delay_mins 0.3
   action :request_reboot
 end
