@@ -4,6 +4,7 @@ dirs = ['/home/dsusilo/Downloads', '/home/dsusilo/Pictures',
 
 dirs.each do |dir|
   directory dir do
+    owner 'dsusilo'
     action :create
   end
 end
