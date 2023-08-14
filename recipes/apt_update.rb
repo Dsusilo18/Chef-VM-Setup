@@ -11,7 +11,9 @@ execute 'autoremove' do
 end
 
 execute 'get install apt' do
-  command 'sudo apt-get install update-manager-core -y'
+  command 'apt-get install update-manager-core -y'
+  user 'root'
+  environment(HOME: 'home/root', USER: 'root')
 end
 
 # Upgrade to the latest Ubuntu which requires some time.
