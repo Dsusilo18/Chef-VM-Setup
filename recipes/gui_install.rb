@@ -11,7 +11,9 @@ apt_package 'gdm3' do
 end
 
 # sudo reboot
-reboot 'reboot' do
-  # delay_mins 0.3
+reboot 'my_reboot' do
+  # delay_mins 1
   action :request_reboot
+  only_if { ::File.exist?('/var/run/reboot-required') }
 end
+
