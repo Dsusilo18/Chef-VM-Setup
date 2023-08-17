@@ -6,3 +6,7 @@ end
 apt_package 'chromium-browser' do
   action :install
 end
+
+snap_package 'plexmediaserver' do
+  action :install
+end
