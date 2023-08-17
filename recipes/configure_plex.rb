@@ -9,7 +9,7 @@ template '/var/snap/plexmediaserver/common/Library/Application Support/Plex Medi
   owner 'dsusilo'
   mode '0644'
   variables(
-    library_paths: ['/home/dsusilo/Pictures/Background']
+    library_paths: '/home/dsusilo/Pictures/Background'
   )
 end
 
