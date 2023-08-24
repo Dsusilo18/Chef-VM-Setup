@@ -5,9 +5,9 @@ Configures an ideal set up for a virutal machine running on ARM64.
 Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 
 ## Usage 
-- Start: Kitchen Converge test-ubuntu20
-- Test: Kitchen Verify test-ubuntu20
-- Stop: Kitchen Destroy test-ubuntu20
+- Start: Kitchen Converge vm-setup
+- Test: Kitchen Verify vm-setup
+- Stop: Kitchen Destroy vm-setup
 
 ## Recipes
 1. apt_update.rb

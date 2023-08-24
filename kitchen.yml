@@ -24,9 +24,9 @@ platforms:
       box_check_update: true
 
 suites: 
- - name: test
+ - name: vm-setup
    run_list:
-   - recipe[test_cookbook::default]
+   - recipe[setup_cookbook::default]
    verifier:
      controls:
      - default
