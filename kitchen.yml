@@ -26,7 +26,7 @@ platforms:
 suites: 
  - name: vm-setup
    run_list:
-   - recipe[setup_cookbook::default]
+   - recipe[vm-setup::default]
    verifier:
      controls:
      - default
