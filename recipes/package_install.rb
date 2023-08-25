@@ -10,3 +10,11 @@ end
 snap_package 'plexmediaserver' do
   action :install
 end
+
+execute 'snap install node' do
+  command 'sudo snap install node --classic'
+end
+
+execute 'npm install chromix-too' do
+  command 'sudo npm install -g chromix-too'
+end

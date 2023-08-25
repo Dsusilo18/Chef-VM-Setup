@@ -4,6 +4,16 @@ Configures an ideal set up for a virutal machine running on ARM64.
 ## Requirements
 Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 
+## Function
+1. Install a GUI.
+2. Create a User.
+3. Install Visual Studio Code.
+4. Install Chromium.
+5. Download pictures.
+6. Set up wallpaper.
+7. Create a Plex Media Server.
+8. Bypass Ubuntu Initial Setup Process.
+
 ## Usage 
 - Start: Kitchen Converge vm-setup
 - Test: Kitchen Verify vm-setup
