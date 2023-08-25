@@ -1,13 +1,13 @@
-# test_cookbook
+# vm-setup-cookbook
 Configures an ideal set up for a virutal machine running on ARM64. 
 
 ## Requirements
 Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 
 ## Usage 
-- Start: Kitchen Converge test-ubuntu20
-- Test: Kitchen Verify test-ubuntu20
-- Stop: Kitchen Destroy test-ubuntu20
+- Start: Kitchen Converge vm-setup
+- Test: Kitchen Verify vm-setup
+- Stop: Kitchen Destroy vm-setup
 
 ## Recipes
 1. apt_update.rb
@@ -38,9 +38,9 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
   - Creates a new user account with priviliges. 
 
 ## Attributes:
-1. node[‘test_cookbook’][‘files_list’]
+1. node[‘vm-setup’][‘files_list’]
   - Contains all of the addresses of the files that were just remotely downloaded. 
-2. node[‘test_cookbook’][‘source_list’]
+2. node[‘vm-setup’][‘source_list’]
   - Contains all of the remote address of the files that needs to be installed remotely.
 
 ## Templates:

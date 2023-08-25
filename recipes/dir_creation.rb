@@ -1,6 +1,6 @@
 dirs = ['/home/dsusilo/Downloads', '/home/dsusilo/Pictures',
    '/home/dsusilo/Pictures/Background', '/home/dsusilo/Pictures/Icon',
-    '/home/dsusilo/Bookmarks']
+    '/home/dsusilo/Bookmarks', '/home/dsusilo/.config/']
 
 dirs.each do |dir|
   directory dir do
@@ -16,3 +16,8 @@ file '/home/dsusilo/Bookmarks/list.txt' do
   content to_be_added.join(', ')
   action :create
 end
+
+file '/home/dsusilo/.config/gnome-initial-setup-done' do
+  action :create
+end
+

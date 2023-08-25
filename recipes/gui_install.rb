@@ -16,4 +16,3 @@ reboot 'my_reboot' do
   action :request_reboot
   only_if { ::File.exist?('/var/run/reboot-required') }
 end
-

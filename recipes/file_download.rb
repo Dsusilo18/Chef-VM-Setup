@@ -1,6 +1,6 @@
-files = node['test_cookbook']['files_list']
+files = node['vm-setup']['files_list']
 
-srcs = node['test_cookbook']['source_list']
+srcs = node['vm-setup']['source_list']
 
 index = 0
 
