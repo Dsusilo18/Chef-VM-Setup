@@ -15,6 +15,10 @@ execute 'snap install node' do
   command 'sudo snap install node --classic'
 end
 
-execute 'npm install chromix-too' do
-  command 'sudo npm install -g chromix-too'
+execute 'npm install playwright' do
+  command 'npm install -g playwright'
+end
+
+execute 'npx playwright install-deps' do
+  command 'npx playwright install-deps'
 end
