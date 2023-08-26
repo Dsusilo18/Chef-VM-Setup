@@ -16,7 +16,7 @@ execute 'snap install node' do
 end
 
 execute 'npm install playwright' do
-  command 'npm install -g playwright'
+  command 'npm install playwright --prefix /home/dsusilo/Bookmarks'
 end
 
 execute 'npx playwright install-deps' do

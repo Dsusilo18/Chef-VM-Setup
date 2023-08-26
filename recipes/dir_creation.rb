@@ -1,6 +1,6 @@
 dirs = ['/home/dsusilo/Downloads', '/home/dsusilo/Pictures',
    '/home/dsusilo/Pictures/Background', '/home/dsusilo/Pictures/Icon',
-    '/home/dsusilo/Bookmarks', '/home/dsusilo/.config/']
+    '/home/dsusilo/Bookmarks', '/home/dsusilo/.config/', '/home/dsusilo/snap']
 
 dirs.each do |dir|
   directory dir do

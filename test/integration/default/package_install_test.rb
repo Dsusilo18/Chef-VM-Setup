@@ -1,4 +1,4 @@
-packages = %w(code chromium-browser chromix-too)
+packages = %w(code chromium-browser playwright)
 
 control 'package_install' do
   packages.each do |pack|
