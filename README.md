@@ -16,9 +16,9 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 9. Configure Chromium.
 
 ## Usage 
-- Start: Kitchen Converge vm-setup
-- Test: Kitchen Verify vm-setup
-- Stop: Kitchen Destroy vm-setup
+- Start: kitchen Converge vm-setup
+- Test: kitchen Verify vm-setup
+- Stop: kitchen Destroy vm-setup
 
 ## Recipes
 1. apt_update.rb
@@ -56,6 +56,8 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
   - Contains all of the addresses of the files that were just remotely downloaded. 
 2. node[‘vm-setup’][‘source_list’]
   - Contains all of the remote address of the files that needs to be installed remotely.
+3. node['vm-setup']['dirs_list']
+  - Contains all the directories that needs to be created. 
 
 ## Templates:
 Preferences.xml.erb

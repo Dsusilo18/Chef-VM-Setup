@@ -1,4 +1,4 @@
-packages = %w(code chromium-browser playwright)
+packages = %w(code chromium-browser)
 
 control 'package_install' do
   packages.each do |pack|
@@ -6,4 +6,9 @@ control 'package_install' do
       it { should be_installed }
     end
   end
+
+  describe file('/snap/plexmediaserver') do
+    it { should exist }
+  end
+  
 end
