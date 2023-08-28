@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.6.0] - 2023-8-28
+
+- Chromium can now be configured to have specific bookmarks. 
+
 ## [1.5.0] - 2023-8-24
 
 - Changed the name of the cookbook and kitchen.
