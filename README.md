@@ -13,6 +13,7 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 6. Set up wallpaper.
 7. Create a Plex Media Server.
 8. Bypass Ubuntu Initial Setup Process.
+9. Configure Chromium.
 
 ## Usage 
 - Start: Kitchen Converge vm-setup
@@ -46,6 +47,9 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 
 9. user_creation.rb
   - Creates a new user account with priviliges. 
+
+10. configure_chromium.rb
+  - Configure Chromium to have all the settings, preferences, extensions, bookmarks and etc. of an already existing Chromium.
 
 ## Attributes:
 1. node[‘vm-setup’][‘files_list’]
