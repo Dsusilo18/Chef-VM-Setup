@@ -7,7 +7,7 @@ control 'package_install' do
     end
   end
 
-  describe file('/snap/plexmediaserver') do
+  describe directory '/snap/plexmediaserver' do
     it { should exist }
   end
   

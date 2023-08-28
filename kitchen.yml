@@ -36,3 +36,5 @@ suites:
      - file_download
      - package_install
      - picture_install
+     - configure_chromium
+     - configure_plex
