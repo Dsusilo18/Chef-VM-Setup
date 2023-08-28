@@ -5,9 +5,8 @@ remote_directory '/home/dsusilo/snap' do
     action :create
   end
 
-Dir.glob('/home/dsusilo/snap/**/*.txt').each do |file_path|
-  file file_path do
+file '/home/dsusilo/snap/chromium/common/chromium/Default/Bookmarks' do
     owner 'dsusilo'
     mode '0755'
+    action :touch
   end
-end
