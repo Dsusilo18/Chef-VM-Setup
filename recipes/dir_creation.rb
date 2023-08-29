@@ -1,6 +1,4 @@
-dirs = ['/home/dsusilo/Downloads', '/home/dsusilo/Pictures',
-   '/home/dsusilo/Pictures/Background', '/home/dsusilo/Pictures/Icon',
-    '/home/dsusilo/Bookmarks', '/home/dsusilo/.config/']
+dirs = node['vm-setup']['dirs_list']
 
 dirs.each do |dir|
   directory dir do

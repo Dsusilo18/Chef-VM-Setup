@@ -4,10 +4,21 @@ Configures an ideal set up for a virutal machine running on ARM64.
 ## Requirements
 Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 
+## Function
+1. Install a GUI.
+2. Create a User.
+3. Install Visual Studio Code.
+4. Install Chromium.
+5. Download pictures.
+6. Set up wallpaper.
+7. Create a Plex Media Server.
+8. Bypass Ubuntu Initial Setup Process.
+9. Configure Chromium.
+
 ## Usage 
-- Start: Kitchen Converge vm-setup
-- Test: Kitchen Verify vm-setup
-- Stop: Kitchen Destroy vm-setup
+- Start: kitchen Converge vm-setup
+- Test: kitchen Verify vm-setup
+- Stop: kitchen Destroy vm-setup
 
 ## Recipes
 1. apt_update.rb
@@ -37,11 +48,16 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 9. user_creation.rb
   - Creates a new user account with priviliges. 
 
+10. configure_chromium.rb
+  - Configure Chromium to have all the settings, preferences, extensions, bookmarks and etc. of an already existing Chromium.
+
 ## Attributes:
 1. node[‘vm-setup’][‘files_list’]
   - Contains all of the addresses of the files that were just remotely downloaded. 
 2. node[‘vm-setup’][‘source_list’]
   - Contains all of the remote address of the files that needs to be installed remotely.
+3. node['vm-setup']['dirs_list']
+  - Contains all the directories that needs to be created. 
 
 ## Templates:
 Preferences.xml.erb

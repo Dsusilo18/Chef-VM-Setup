@@ -1,0 +1,135 @@
+{
+   "checksum": "bfe78d65743442126064731a9bbe2ed0",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13337466301165192",
+            "date_last_used": "0",
+            "guid": "64fed9f8-2a36-4870-8074-798fa778006a",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Google",
+            "type": "url",
+            "url": "https://www.google.com/"
+         }, {
+            "date_added": "13337467499459302",
+            "date_last_used": "0",
+            "guid": "6fdf8770-4be9-4691-b147-d3e1f9990acf",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Best Buy | Official Online Store | Shop Now & Save",
+            "type": "url",
+            "url": "https://www.bestbuy.com/"
+         }, {
+            "date_added": "13337468618803382",
+            "date_last_used": "0",
+            "guid": "6351a574-c4b0-4700-b035-73161257f9eb",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Crunchyroll - Watch Popular Anime & Read Manga Online",
+            "type": "url",
+            "url": "https://www.crunchyroll.com/"
+         }, {
+            "date_added": "13337468639468486",
+            "date_last_used": "0",
+            "guid": "6234d3b7-f81b-447b-8baf-4e0db839eda1",
+            "id": "10",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Rubular: a Ruby regular expression editor",
+            "type": "url",
+            "url": "https://rubular.com/"
+         }, {
+            "date_added": "13337468766855459",
+            "date_last_used": "0",
+            "guid": "e600c01e-cdc9-44fc-843f-ebbff6534b6d",
+            "id": "11",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "All Infra Resources",
+            "type": "url",
+            "url": "https://docs.chef.io/resources/"
+         }, {
+            "date_added": "13337469193612045",
+            "date_last_used": "0",
+            "guid": "caa44f8b-d2cf-4d05-8025-149e1691c702",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Dsusilo18 (dsusilo) · GitHub",
+            "type": "url",
+            "url": "https://github.com/dsusilo18"
+         }, {
+            "date_added": "13337469230627611",
+            "date_last_used": "0",
+            "guid": "b2bda6f2-79b5-46b9-a8f2-1933fcc4144a",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Documentation for Ruby 3.3",
+            "type": "url",
+            "url": "https://docs.ruby-lang.org/en/master/"
+         }, {
+            "date_added": "13337469326865153",
+            "date_last_used": "0",
+            "guid": "73dc0f56-971b-4446-b3a7-9408310f966d",
+            "id": "14",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "One Piece Manhwa - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/@OnePieceManhwa"
+         }, {
+            "date_added": "13337469377754315",
+            "date_last_used": "0",
+            "guid": "cf40e425-341b-4d73-bc6f-b87a3822069a",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "New Hope — English - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/@VarunLaohaprasitEnglish"
+         } ],
+         "date_added": "13337466289708094",
+         "date_last_used": "0",
+         "date_modified": "13337469377754315",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13337466289708095",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13337466289708096",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

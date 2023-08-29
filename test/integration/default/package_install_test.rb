@@ -6,4 +6,9 @@ control 'package_install' do
       it { should be_installed }
     end
   end
+
+  describe directory '/snap/plexmediaserver' do
+    it { should exist }
+  end
+  
 end
