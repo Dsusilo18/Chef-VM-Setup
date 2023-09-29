@@ -18,4 +18,3 @@ end
 file '/home/dsusilo/.config/gnome-initial-setup-done' do
   action :create
 end
-
