@@ -10,5 +10,4 @@ control 'package_install' do
   describe directory '/snap/plexmediaserver' do
     it { should exist }
   end
-  
 end

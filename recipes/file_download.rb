@@ -7,7 +7,7 @@ index = 0
 while index < files.length()
   remote_file files[index] do
     source srcs[index]
-    owner 'dsusilo'
+    owner node['vm-setup']['user_name']
     action :create
   end
   index += 1
