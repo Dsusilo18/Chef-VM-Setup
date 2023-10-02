@@ -101,6 +101,10 @@
             "name": "New Hope — English - YouTube",
             "type": "url",
             "url": "https://www.youtube.com/@VarunLaohaprasitEnglish"
+         }, {
+            "id": "16",
+            "type": "url",
+            "url": "https://docs.chef.io/resources/user/"
          } ],
          "date_added": "13337466289708094",
          "date_last_used": "0",

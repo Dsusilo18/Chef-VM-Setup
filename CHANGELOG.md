@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.6.1] - 2023-9-29
+
+- Added an attribute to allow the user to change the username and password of the user of the machine. Also made the user able to decide if they would like to update Ubuntu on booting or not. 
+
 ## [1.6.0] - 2023-8-28
 
 - Chromium can now be configured to have all the settings, preferences, extensions and bookmarks of an already existing chromium. 
