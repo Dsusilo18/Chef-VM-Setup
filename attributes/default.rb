@@ -1,7 +1,9 @@
 default['vm-setup']['user_name'] = 'dsusilo'
 default['vm-setup']['user_pass'] = '$1$5o8FPo4C$5kFNhdltQ84.gKBkPir/l/'
 
-default['vm-setup']['files_list'] = ["/home/#{node['vm-setup']['user_name']}/Downloads/code_1.81.0-1690979901_arm64.deb",
+default['vm-setup']['code_version'] = '1.82.2'
+
+default['vm-setup']['files_list'] = ["/home/#{node['vm-setup']['user_name']}/Downloads/code_#{node['vm-setup']['code_version']}_arm64.deb",
     "/home/#{node['vm-setup']['user_name']}/Pictures/Background/pexels-cats-coming-1543793.jpg",
     "/home/#{node['vm-setup']['user_name']}/Pictures/Background/pexels-photo-16013451.jpg"]
 
