@@ -52,11 +52,15 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
   - Configure Chromium to have all the settings, preferences, extensions, bookmarks and etc. of an already existing Chromium.
 
 ## Attributes:
-1. node[‘vm-setup’][‘files_list’]
+1. node['vm-setup']['user_name']
+  - The username for the user of the machine.
+2. node['vm-setup']['user_pass']
+  - The password for the user of the machine in hash code. 
+3. node['vm-setup'][‘files_list’]
   - Contains all of the addresses of the files that were just remotely downloaded. 
-2. node[‘vm-setup’][‘source_list’]
+4. node['vm-setup'][‘source_list’]
   - Contains all of the remote address of the files that needs to be installed remotely.
-3. node['vm-setup']['dirs_list']
+5. node['vm-setup']['dirs_list']
   - Contains all the directories that needs to be created. 
 
 ## Templates:
