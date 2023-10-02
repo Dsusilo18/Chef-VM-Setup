@@ -1,8 +1,7 @@
-user 'daryl susilo' do
+user node['vm-setup']['user_name'] do
   uid 1234
-  home '/home/dsusilo'
-  password '$1$5o8FPo4C$5kFNhdltQ84.gKBkPir/l/'
-  username 'dsusilo'
+  home "/home/#{node['vm-setup']['user_name']}"
+  password node['vm-setup']['user_pass']
   shell '/bin/bash'
   action :create
   manage_home true
