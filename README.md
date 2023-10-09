@@ -16,9 +16,9 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 9. Configure Chromium.
 
 ## Usage 
-- Start: kitchen Converge vm-setup
-- Test: kitchen Verify vm-setup
-- Stop: kitchen Destroy vm-setup
+- Start: kitchen converge vm-setup
+- Test: kitchen verify vm-setup
+- Stop: kitchen destroy vm-setup
 
 ## Recipes
 1. apt_update.rb
@@ -56,6 +56,8 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
   - The username for the user of the machine.
 2. node['vm-setup']['user_pass']
   - The password for the user of the machine in hash code. 
+3. node['vm-setup']['code_version']
+  - The vistual studio code version that is to be installed. 
 3. node['vm-setup'][‘files_list’]
   - Contains all of the addresses of the files that were just remotely downloaded. 
 4. node['vm-setup'][‘source_list’]
