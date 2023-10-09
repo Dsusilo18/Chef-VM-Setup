@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.6.3] - 2023-10-9
+
+- Added a spec test for the apt_update.rb to thest all of its execution commands.
+
 ## [1.6.2] - 2023-10-2
 
 - Added the Visual Studio Code version to attributes so that user can easily change it.
