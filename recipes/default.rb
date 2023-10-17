@@ -6,5 +6,5 @@ include_recipe 'vm-setup::file_download'
 include_recipe 'vm-setup::package_install'
 include_recipe 'vm-setup::configure_plex'
 include_recipe 'vm-setup::configure_chromium'
+include_recipe 'vm-setup::add_bookmarks'
 include_recipe 'vm-setup::picture_install'
-

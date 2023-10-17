@@ -14,6 +14,7 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 7. Create a Plex Media Server.
 8. Bypass Ubuntu Initial Setup Process.
 9. Configure Chromium.
+10. Add bookmarks to Chromium.
 
 ## Usage 
 - Start: kitchen converge vm-setup
@@ -64,6 +65,10 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
   - Contains all of the remote address of the files that needs to be installed remotely.
 5. node['vm-setup']['dirs_list']
   - Contains all the directories that needs to be created. 
+6. node['vm-setup']['bookmark_name_list']
+  - Stores the name of the bookmarks to be added to Chrome.
+7. node['vm-setup']['bookmark_url_list'] 
+  - Stores all the urls associated to the name of the bookmarks.
 
 ## Templates:
 Preferences.xml.erb
