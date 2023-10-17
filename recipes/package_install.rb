@@ -16,7 +16,7 @@ execute 'snap install node' do
 end
 
 execute 'npm install playwright' do
-  command "npm install playwright --prefix /home/#{node['vm-setup']['user_name']}/Bookmarks"
+  command "npm install playwright --prefix /home/#{node['vm-setup']['user_name']}/Downloads"
 end
 
 execute 'npx playwright install-deps' do

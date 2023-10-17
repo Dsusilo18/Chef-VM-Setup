@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.7.0] - 2023-10-17
+
+- Allow the user to add bookmarks to Chromium by providing the name and url into attributes 'bookmark_name_list' and 'bookmark_url_list'. 
+- Modified README to be more up to date as a result of the recent changes. 
+
 ## [1.6.3] - 2023-10-9
 
 - Added a spec test for the apt_update.rb to thest all of its execution commands.
