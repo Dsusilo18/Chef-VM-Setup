@@ -14,11 +14,3 @@ end
 execute 'snap install node' do
   command 'sudo snap install node --classic'
 end
-
-execute 'npm install playwright' do
-  command "npm install playwright --prefix /home/#{node['vm-setup']['user_name']}/Downloads"
-end
-
-execute 'npx playwright install-deps' do
-  command 'npx playwright install-deps'
-end
