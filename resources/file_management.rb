@@ -26,15 +26,16 @@ action_class do
   end
 
   def check_path(dirs)
-    error = true
+    full_src = "/home/#{new_resource.owner}#{new_resource.path}"
+    full_src = full_src.sub(%r{/[^/]*\z}, '')
+
+    path_found = false
     dirs.each do |dir|
-      full_src = "/home/#{new_resource.owner}#{new_resource.path}"
-      if full_src.include? dir
-        error = false
-        break
+      if full_src == dir
+        path_found = true
       end
     end
-    raise "ERROR: property 'path' must contain an existing directory" unless error == false
+    raise "ERROR: property 'path' must contain an existing directory! Unknown Path: #{full_src}" unless path_found
   end
 end
 
@@ -52,9 +53,7 @@ end
 
 action :create_file do
   converge_if_changed(:owner, :path, :source) do
-    dirs = get_dirs
-    put dirs
-    check_path(dirs)
+    check_path(get_dirs)
     remote_file "/home/#{new_resource.owner}#{new_resource.path}" do
       source new_resource.source
       owner new_resource.owner

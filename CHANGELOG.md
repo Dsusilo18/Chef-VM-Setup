@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.8.0] - 2023-11-06
+
+- Created a resource to handle file and directory creation for simpler configuration by the user. 
+- Added an attribute for the wallpaper of the VM. 
+
 ## [1.7.1] - 2023-10-18
 
 - Created an inspec test for 'add_bookmarks.rb'
