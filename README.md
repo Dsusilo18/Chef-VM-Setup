@@ -63,12 +63,14 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
   - Contains all of the addresses of the files that were just remotely downloaded. 
 4. node['vm-setup'][‘source_list’]
   - Contains all of the remote address of the files that needs to be installed remotely.
-5. node['vm-setup']['dirs_list']
-  - Contains all the directories that needs to be created. 
-6. node['vm-setup']['bookmark_name_list']
+5. node['vm-setup']['bookmark_name_list']
   - Stores the name of the bookmarks to be added to Chrome.
-7. node['vm-setup']['bookmark_url_list'] 
+6. node['vm-setup']['bookmark_url_list'] 
   - Stores all the urls associated to the name of the bookmarks.
+7. node['vm-setup']['upgrade_ubuntu']
+  - A true or false flag for upgrading Ubuntu.
+8. node['vm-setup']['background']
+  - The url to download the image for the wallpaper.
 
 ## Templates:
 Preferences.xml.erb

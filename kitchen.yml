@@ -38,3 +38,4 @@ suites:
      - picture_install
      - configure_chromium
      - configure_plex
+     - add_bookmarks
