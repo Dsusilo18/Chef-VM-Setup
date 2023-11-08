@@ -18,7 +18,7 @@ ruby_block 'read file' do
 
     file_path = "/home/#{node['vm-setup']['user_name']}/snap/chromium/common/chromium/Default/Bookmarks"
 
-    existing_content = ::File.read(file_path)
+    existing_content = ::File.read(file_path) if ::File.exist? file_path
 
     begin
       existing_json = JSON.parse(existing_content)

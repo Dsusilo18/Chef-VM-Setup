@@ -18,7 +18,8 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 
 ## Usage 
 - Start: kitchen converge vm-setup
-- Test: kitchen verify vm-setup
+- Test[Integration]: kitchen verify vm-setup
+- Test[Unit]: chef exec rpsec
 - Stop: kitchen destroy vm-setup
 
 ## Recipes
@@ -50,7 +51,7 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
   - Creates a new user account with priviliges. 
 
 10. configure_chromium.rb
-  - Configure Chromium to have all the settings, preferences, extensions, bookmarks and etc. of an already existing Chromium.
+  - Configure Chromium to have all the settings, preferences, extensions, bookmarks and etc of an already existing Chromium.
 
 ## Attributes:
 1. node['vm-setup']['user_name']
