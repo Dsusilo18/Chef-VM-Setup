@@ -1,4 +1,4 @@
-files = ['/home/dsusilo/Downloads/code_1.82.2_arm64.deb', '/home/dsusilo/Pictures/Background/pexels-cats-coming-1543793.jpg',
+files = ['/home/dsusilo/Downloads/code_1.82.2_arm64.deb', '/home/dsusilo/Pictures/Background/pexels-photo-1543793.jpg',
 '/home/dsusilo/Pictures/Background/pexels-photo-16013451.jpg']
 
 control 'file_download' do

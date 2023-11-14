@@ -10,6 +10,7 @@ provisioner:
   product_name: chef
   product_version: latest
   name: chef_zero
+  
 
 verifier:
   name: inspec
@@ -39,3 +40,10 @@ suites:
      - configure_chromium
      - configure_plex
      - add_bookmarks
+
+ - name: file-management
+   run_list:
+    - recipe[vm-setup::file_management_recipe]
+   verifier:
+      controls:
+        - file_management
