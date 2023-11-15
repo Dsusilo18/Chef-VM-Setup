@@ -2,6 +2,16 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.8.2] - 2023-11-13
+
+- Created an chef inspec integration test for the file_management resource.
+- Created a recipe for the file_management resource.
+- Modified 'kitchen.yml' to have a file-management suite that would be used to test the resource. 
+
+## [1.8.1] - 2023-11-08
+
+- Added chef spec test for apt_update, configure_chromium, package_install and user_creation.
+
 ## [1.8.0] - 2023-11-06
 
 - Created a resource to handle file and directory creation for simpler configuration by the user. 
