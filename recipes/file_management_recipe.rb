@@ -11,4 +11,3 @@ file_management 'create the picture file' do
   owner 'vagrant'
   action :create_file
 end
-
