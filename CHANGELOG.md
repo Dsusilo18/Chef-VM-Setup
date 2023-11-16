@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.8.3] - 2023-11-16
+
+- Added chef spec test for add_bookmarks, apt_update, dir_creation, picture_install, configure_plex and gui_install.
+
 ## [1.8.2] - 2023-11-13
 
 - Created an chef inspec integration test for the file_management resource.
