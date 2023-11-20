@@ -2,6 +2,15 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.8.4] - 2023-11-20
+
+- Added a chefspec test to the file_management resource.
+- Fixed file_management resource path property. 
+
+## [1.8.3] - 2023-11-16
+
+- Added chefspec test for add_bookmarks, apt_update, dir_creation, picture_install, configure_plex and gui_install.
+
 ## [1.8.2] - 2023-11-13
 
 - Created an chef inspec integration test for the file_management resource.
@@ -10,7 +19,7 @@ This file is used to list changes made in each version of the vm-setup cookbook.
 
 ## [1.8.1] - 2023-11-08
 
-- Added chef spec test for apt_update, configure_chromium, package_install and user_creation.
+- Added chefspec test for apt_update, configure_chromium, package_install and user_creation.
 
 ## [1.8.0] - 2023-11-06
 

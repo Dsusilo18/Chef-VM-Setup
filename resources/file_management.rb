@@ -4,12 +4,7 @@ default_action :create_dir
 
 property :owner, String, required: true
 property :path, String,
-         coerce: proc { |x|
-                   warn "WARNING: Property 'path' must be a String that starts with '/'. Setting it to a String starting with '/'" unless x.is_a?(String) && x =~ %r{^/}
-                   "/#{x}" unless x.is_a?(String) && x =~ %r{^/}
-                   '/' + x unless !(x.is_a? String) || x =~ %r{^/}
-                   x if x.is_a?(String) && x =~ %r{^/}
-                 },
+         name_property: true,
          description: 'The path to where the file or directory will be.'
 property :source, String,
          coerce: proc { |x|

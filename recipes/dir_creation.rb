@@ -1,4 +1,4 @@
-file_management 'create all the base directories' do
+file_management '/home' do
   owner node['vm-setup']['user_name']
   action :create_dir
 end

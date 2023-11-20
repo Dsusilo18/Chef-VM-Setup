@@ -1,6 +1,8 @@
 require 'json'
 
-ruby_block 'read file' do
+updated_content = nil
+
+ruby_block 'read file and generate content' do
   block do
     def add_bookmarks(json_file)
       mark_url = node['vm-setup']['bookmark_url_list']
@@ -28,10 +30,14 @@ ruby_block 'read file' do
 
     if existing_json['roots']
       updated_content = JSON.generate(add_bookmarks(existing_json))
-      File.write("/home/#{node['vm-setup']['user_name']}/snap/chromium/common/chromium/Default/Bookmarks", updated_content)
     else
       raise 'The file does not contain "roots"'
     end
   end
   action :run
+end
+
+file "/home/#{node['vm-setup']['user_name']}/snap/chromium/common/chromium/Default/Bookmarks" do
+  owner node['vm-setup']['user_name']
+  content lazy { updated_content }
 end
