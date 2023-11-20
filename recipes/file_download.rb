@@ -12,8 +12,7 @@ raise "Error: Visual Studio Code version doesn't exist!" unless response.code ==
 index = 0
 
 while index < files.length()
-  file_management 'create remote files' do
-    path files[index]
+  file_management files[index] do
     source srcs[index]
     owner node['vm-setup']['user_name']
     action :create_file
