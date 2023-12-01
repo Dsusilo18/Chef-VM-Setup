@@ -17,8 +17,6 @@ execute 'get install apt' do
 end
 
 # Upgrade to the latest Ubuntu which requires some time.
-if node['vm-setup']['upgrade_ubuntu'] == true
-  execute 'do-release-upgrade' do
-    command 'sudo do-release-upgrade -f DistUpgradeViewNonInteractive'
-  end
+execute 'do-release-upgrade' do
+  command 'sudo do-release-upgrade -f DistUpgradeViewNonInteractive'
 end

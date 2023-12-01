@@ -48,8 +48,8 @@ describe 'vm-setup::file_management' do
     end
 
     it 'should raise an error' do
-        expect { subject }.to raise_error(Chef::Exceptions::ValidationFailed)
-      end
+      expect { subject }.to raise_error(Chef::Exceptions::ValidationFailed)
+    end
   end
 
   context 'create base directories with path string not containing /' do

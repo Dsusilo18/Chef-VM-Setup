@@ -14,5 +14,4 @@ end
 reboot 'my_reboot' do
   # delay_mins 1
   action :request_reboot
-  only_if { ::File.exist?('/var/run/reboot-required') }
 end

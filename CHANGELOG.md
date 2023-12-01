@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the vm-setup cookbook.
 
+## [1.8.5] - 2023-12-01
+
+- Added dependency check recipe for unchecked attributes.
+
 ## [1.8.4] - 2023-11-20
 
 - Added a chefspec test to the file_management resource.

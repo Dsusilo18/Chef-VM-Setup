@@ -1,3 +1,4 @@
+include_recipe 'vm-setup::dependency'
 include_recipe 'vm-setup::user_creation'
 include_recipe 'vm-setup::apt_update'
 include_recipe 'vm-setup::gui_install'

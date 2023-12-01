@@ -53,13 +53,22 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 10. configure_chromium.rb
   - Configure Chromium to have all the settings, preferences, extensions, bookmarks and etc of an already existing Chromium.
 
+11. add_bookmarks.rb
+  - Allow the user to add attributes that will result in adding bookmarks in the vm.
+
+12. dependency.rb
+  - Checks unchecked attribute dependencies. 
+
+13. file_management_recipe.rb
+  - Solely utilizes the file_management resource for testing purposes. 
+
 ## Attributes:
 1. node['vm-setup']['user_name']
-  - The username for the user of the machine.
+  - The username for the user of the machine as a string.
 2. node['vm-setup']['user_pass']
-  - The password for the user of the machine in hash code. 
+  - The password for the user of the machine in hash code string. 
 3. node['vm-setup']['code_version']
-  - The vistual studio code version that is to be installed. 
+  - The vistual studio code version that is to be installed as a string. 
 3. node['vm-setup'][‘files_list’]
   - Contains all of the addresses of the files that were just remotely downloaded. 
 4. node['vm-setup'][‘source_list’]
@@ -71,7 +80,7 @@ Vagrant, Parallels, Chef, Chef InSpec, bento/ubuntu-20.04-arm64
 7. node['vm-setup']['upgrade_ubuntu']
   - A true or false flag for upgrading Ubuntu.
 8. node['vm-setup']['background']
-  - The url to download the image for the wallpaper.
+  - The url to download the image for the wallpaper as a string.
 
 ## Templates:
 Preferences.xml.erb
