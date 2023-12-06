@@ -16,7 +16,9 @@ execute 'get install apt' do
   environment(HOME: 'home/root', USER: 'root')
 end
 
-# Upgrade to the latest Ubuntu which requires some time.
-execute 'do-release-upgrade' do
-  command 'sudo do-release-upgrade -f DistUpgradeViewNonInteractive'
+if node['vm-setup']['upgrade_ubuntu']
+  # Upgrade to the latest Ubuntu which requires some time.
+  execute 'do-release-upgrade' do
+    command 'sudo do-release-upgrade -f DistUpgradeViewNonInteractive'
+  end
 end

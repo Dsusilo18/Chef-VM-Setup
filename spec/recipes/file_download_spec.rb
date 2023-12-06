@@ -13,7 +13,7 @@ describe 'vm-setup::file_download' do
   context 'visual studio code version is not available' do
     default_attributes['vm-setup']['code_version'] = '1.95'
     it 'Should raise an error' do
-      expect { subject }.to raise_error("Error: Visual Studio Code version doesn't exist!")
+      expect { subject }.to raise_error('Error: Visual Studio Code version does not exist!')
     end
   end
 
